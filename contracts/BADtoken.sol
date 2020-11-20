@@ -36,8 +36,8 @@ contract BADtoken is ERC20Burnable, Ownable {
     }
     
     
-    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20, ERC20Burnable) {
-        require !isBlackListed(from);
+    function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20) {
+        require (!isBlackListed(from));
         super._beforeTokenTransfer(from, to, amount);
     }
 
