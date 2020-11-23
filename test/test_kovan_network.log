@@ -1,0 +1,31 @@
+$ truffle test --network kovan
+Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
+Using network 'kovan'.
+
+
+Compiling your contracts...
+===========================
+✔ Fetching solc version list from solc-bin. Attempt #1
+> Compiling ./contracts/BADtoken.sol
+✔ Fetching solc version list from solc-bin. Attempt #1
+
+> Artifacts written to /tmp/test--213356-yhVW6EAKLl5v
+> Compiled successfully using:
+   - solc: 0.7.5+commit.eb77ed08.Emscripten.clang
+
+Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
+
+
+  Contract: BADtoken
+    ✓ totalSupply should be 10,000,000 token (1833ms)
+    ✓ owner should have 10,000,000 token (1785ms)
+burning     =   2000000000000000000000000
+balance_new =   8000000000000000000000000
+    ✓ account owner can burn his token (15781ms)
+    ✓ no account should be blacklisted at the start (2019ms)
+    ✓ owner can transfer token to other account (14242ms)
+    ✓ blacklist other account (10901ms)
+    ✓ transfer token to blacklisted other account should fail (9749ms)
+
+
+  7 passing (1m)
