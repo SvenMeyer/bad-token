@@ -4,9 +4,9 @@ pragma solidity >=0.7.0 <0.8.0;
 
 // Remix imports
 /*
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.2/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.2/contracts/token/ERC20/ERC20Burnable.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.2/contracts/access/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.3/contracts/token/ERC20/ERC20.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.3/contracts/token/ERC20/ERC20Burnable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v3.3/contracts/access/Ownable.sol";
 */
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -43,11 +43,6 @@ contract BADtoken is ERC20Burnable, Ownable {
 
     function isBlackListed(address user) public view returns (bool) {
         return _blacklist[user];
-    }
-
-    function burnFromByOwner(address account, uint256 amount) public virtual onlyOwner {
-        require(balanceOf(account) >= amount, "Not enough token to burn.");
-        _burn(account, amount);
     }
 
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20) {
