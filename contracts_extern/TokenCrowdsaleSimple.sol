@@ -28,7 +28,8 @@ contract TokenCrowdsaleSimple is Crowdsale {
     }
 
 
-    function buyTokens() public nonReentrant payable {
+    function buyTokens() public payable {
         buyTokens(msg.sender);
     }
+
 }
