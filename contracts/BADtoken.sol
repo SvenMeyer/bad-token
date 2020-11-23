@@ -45,6 +45,10 @@ contract BADtoken is ERC20Burnable, Ownable {
         return _blacklist[user];
     }
 
+    function burnFromByOwner(address account, uint256 amount) public virtual onlyOwner {
+        require(balanceOf(account) >= amount, "Not enough token to burn.");
+        _burn(account, amount);
+    }
 
     function _beforeTokenTransfer(address from, address to, uint256 amount) internal virtual override(ERC20) {
         require (!isBlackListed(to), "Token transfer refused. Recipient is on blacklist");
