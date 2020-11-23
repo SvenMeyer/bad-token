@@ -2,7 +2,6 @@ pragma solidity ^0.5.17;
 
 // https://docs.openzeppelin.com/contracts/2.x/crowdsales
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol";
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.1/contracts/crowdsale/Crowdsale.sol";
 
 /*
@@ -16,7 +15,7 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v2.5.1/contr
 	token will be send to provided beneficiary (address)
 */
 
-contract TokenCrowdsale is Crowdsale {
+contract TokenCrowdsaleSimple is Crowdsale {
     constructor(
         uint256 rate,
         address payable wallet,
@@ -25,8 +24,9 @@ contract TokenCrowdsale is Crowdsale {
         Crowdsale(rate, wallet, token)
         public
     {
-
+        // nothing more to do
     }
+
 
     function buyTokens() public nonReentrant payable {
         buyTokens(msg.sender);
