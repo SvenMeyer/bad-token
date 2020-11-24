@@ -1,0 +1,41 @@
+# BADtoken
+
+## Deployment (ACCOUNT 1 - 0xa31F3d5d0d8A412084a3f83D253340524F7f8897)
+
+https://kovan.etherscan.io/tx/0x8153dc2012b086948a773ad44d0f68e0de5c292fc1249f75e5b4bff82af4bb0d
+
+address: 0x976387F02B3555e86E71D2c7926DeDc37e984F87
+
+   1 BAD =    1000000000000000000
+1000 BAD = 1000000000000000000000
+
+------------------------------------------------------------------------------------------------
+
+TokenCrowdsaleSimple
+
+rate   : 100
+wallet : 0xa31F3d5d0d8A412084a3f83D253340524F7f8897
+token  : 0x976387F02B3555e86E71D2c7926DeDc37e984F87
+
+address: 0x7D0054c8ddb1aaDE63C179C5ad4e32a75b5DEA27
+
+------------------------------------------------------------------------------------------------
+
+send 10000 BAD > TokenCrowdsaleSimple
+
+https://kovan.etherscan.io/tx/0xd4eddfd92b557d03e610ff339cd9f00fafeb8d44154a915f01933944124321f3
+
+
+------------------------------------------------------------------------------------------------
+
+## buy token (ACCOUNT 2 - 0xB9a83B0EB888bD041fE5704F75aAd88886A2bb0d)
+
+function buyToken (0.1 ETH)
+https://kovan.etherscan.io/tx/0xb50b2861182ce301e33ebb6c18b7c395756e9b42f8c4378aa87050f94dd5e8da
+
+send 0.1 ETH to TokenCrowdsaleSimple
+https://kovan.etherscan.io/tx/0x492aa4b19557110b6c1be40f3bf1ebb9ca5d81b29f9c77ea0c4e5d21ed4bfef8
+
+------------------------------------------------------------------------------------------------
+
+ACCOUNT 3 - 0xA5E5fC6e75A19447544105995C0B6e8e405b63C2
