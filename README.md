@@ -41,7 +41,7 @@ Only the holder of the token (wallet) can execute this function.
 
 The BADtoken has been deployed on the following test networks with the following addresses :
 
-## Deployment
+## Deployment - BADtoken
 The BADtoken has been deployed to the following networks.
 
 **kovan test network**
@@ -65,7 +65,7 @@ wallet : receiver (address) of ETH funds (0xa31F3d5d0d8A412084a3f83D253340524F7f
 
 token  : token (address) to be sold for ETH (0x976387F02B3555e86E71D2c7926DeDc37e984F87)
 
-## Deploment
+## Deployment - TokenCrowdsale
 The TokenCrowdsaleSimple.sol contract has been deployed to the following networks.
 
 **kovan test network**
