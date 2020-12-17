@@ -50,7 +50,7 @@ The BADtoken has been deployed to the following networks.
 
 `owner    : 0xa31F3d5d0d8A412084a3f83D253340524F7f8897`
 
-## Token Sale
+## Token Sale Contract
 
 There is no way to define a certain price for an ERC-20 token within a contract. Instead a token sale contract has to be deployed which sells these token for the price of 0.01 ETH per BAD token, equal a `rate` of 100 BADtoken / ETH.
 
